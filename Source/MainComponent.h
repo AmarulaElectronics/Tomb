@@ -9,6 +9,10 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "TrackInspectorComponent.h"
+#include "MixerComponent.h"
+#include "ControlBarComponent.h"
+#include "TrackOptionsComponent.h"
 //==============================================================================
 /*
     This component lives inside our window, and this is where you should put all
@@ -33,10 +37,10 @@ public:
 private:
     //==============================================================================
     // Your private member variables go here...
-    GroupComponent controlBar;
-    GroupComponent trackFocus;
-    GroupComponent trackInspector;
-    GroupComponent mixerDock;
+    ControlBarComponent controlBar;
+    TrackOptionsComponent trackFocus;
+    TrackInspectorComponent trackInspector;
+    MixerComponent mixerDock;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

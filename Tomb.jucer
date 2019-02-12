@@ -8,6 +8,26 @@
             file="Source/MainComponent.cpp"/>
       <FILE id="sRj24W" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
+    <FILE id="BIvOSC" name="ControlBarComponent.cpp" compile="1" resource="0"
+          file="Source/ControlBarComponent.cpp"/>
+    <FILE id="cjpE8j" name="ControlBarComponent.h" compile="0" resource="0"
+          file="Source/ControlBarComponent.h"/>
+    <FILE id="PGXVaF" name="MixerComponent.cpp" compile="1" resource="0"
+          file="Source/MixerComponent.cpp"/>
+    <FILE id="TbP3v6" name="MixerComponent.h" compile="0" resource="0"
+          file="Source/MixerComponent.h"/>
+    <FILE id="Id1vqU" name="TrackComponent.cpp" compile="1" resource="0"
+          file="Source/TrackComponent.cpp"/>
+    <FILE id="FVKMGT" name="TrackComponent.h" compile="0" resource="0"
+          file="Source/TrackComponent.h"/>
+    <FILE id="HNypIf" name="TrackInspectorComponent.cpp" compile="1" resource="0"
+          file="Source/TrackInspectorComponent.cpp"/>
+    <FILE id="wjHGj6" name="TrackInspectorComponent.h" compile="0" resource="0"
+          file="Source/TrackInspectorComponent.h"/>
+    <FILE id="h2GrOq" name="TrackOptionsComponent.cpp" compile="1" resource="0"
+          file="Source/TrackOptionsComponent.cpp"/>
+    <FILE id="bf1Va7" name="TrackOptionsComponent.h" compile="0" resource="0"
+          file="Source/TrackOptionsComponent.h"/>
   </MAINGROUP>
   <EXPORTFORMATS>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">

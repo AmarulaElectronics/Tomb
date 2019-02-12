@@ -11,16 +11,9 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
-    controlBar.setText("Control");
     addAndMakeVisible (controlBar);
-
-    trackFocus.setText("Track Options");
     addAndMakeVisible (trackFocus);
-
-    trackInspector.setText("Track View");
     addAndMakeVisible (trackInspector);
-
-    mixerDock.setText("Mixer");
     addAndMakeVisible (mixerDock);
     // Make sure you set the size of the component after
     // you add any child components.
