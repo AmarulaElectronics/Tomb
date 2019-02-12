@@ -11,6 +11,17 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+    controlBar.setText("Control");
+    addAndMakeVisible (controlBar);
+
+    trackFocus.setText("Track Options");
+    addAndMakeVisible (trackFocus);
+
+    trackInspector.setText("Track View");
+    addAndMakeVisible (trackInspector);
+
+    mixerDock.setText("Mixer");
+    addAndMakeVisible (mixerDock);
     // Make sure you set the size of the component after
     // you add any child components.
     setSize (800, 600);
@@ -80,4 +91,13 @@ void MainComponent::resized()
     // This is called when the MainContentComponent is resized.
     // If you add any child components, this is where you should
     // update their positions.
-}
+    auto area = getLocalBounds();
+    auto controlBarHeight = 150;
+    controlBar.setBounds (area.removeFromTop (controlBarHeight));
+
+    auto trackFocusBarWidth = 240;
+    trackFocus.setBounds (area.removeFromLeft (trackFocusBarWidth));
+
+    trackInspector.setBounds       (area.removeFromTop (1.25 * (area.getHeight() / 2)));
+    mixerDock.setBounds (area.removeFromTop (area.getHeight()));
+} 
